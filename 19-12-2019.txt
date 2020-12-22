@@ -1,0 +1,108 @@
+Machine Learning is not just a simple algorithm which you can put anywhere
+and start getting results.It is a process that starts with defining data,
+and ends with the model with some defined level of accuracy..
+
+1)Defining the problem  (P,E,T)
+2)Collecting the data
+3)Prepare the data
+4)Split the data in training and testing
+5)Algorithm Selection
+6)Training the algorithm
+7)Evaluation on test data
+8)Parameter tuning
+9)Start using your model..
+
+Supervised Learning Algorithms:
+Linear Methods-->Linear Regression,Logistic Regression
+
+Neighborhood Based methods -->K-Nearest Neighbors
+
+Tree-Based Methods -->Single Decision Tree,Ensemble models,Bagging,Boosting.
+
+Support Vector Machines..
+
+Unsupervised Learning Algorithms:
+
+Dimensionality Reduction
+
+Clustering
+
+Association Mapping.
+
+Supervised learning is where you have input variables (x) and an output variable (Y) 
+and you use an algorithm to learn the mapping function from the input to the output.
+
+Y = f(X)
+
+The goal is to approximate the mapping function so well that when you have new input data (x) that you can predict the output variables (Y) for that data.
+
+It is called supervised learning because the process of an algorithm learning from the training dataset 
+can be thought of as a teacher supervising the learning process. 
+We know the correct answers, the algorithm iteratively makes predictions on the 
+training data and is corrected by the teacher.
+Learning stops when the algorithm achieves an acceptable level of performance.
+
+AI is akin to building a rocket ship..We need a huge engine and a lot of fuel.
+If you have a large engine and a tiny amount of fuel,you won't make it to orbit.
+If you have a tiny engine and a ton of fuel,you can't even lift off.
+
+ML were a rocket ship,data would be fuel-without lots and lots of data,the ship cannotfly.
+But not all data is created equal,to use supervised learning algorthms,
+we need lots of labeled data,which is very hard and costly to generate.
+
+Y = a + bX
+Y -->Dependent variable (Predicted)
+X -->Independent variable (Predictor)
+b -->Slope of the line
+a -->Y-intercept
+
+(x1,y1) and (x2,y2)  slope = y2-y1
+                            -------
+                             x2 - x1
+
+Linear Positive slope always moves upward on a graph
+Curve Linear positive slope..(Polynomial Regression)
+Linear Negative slope always moves downward
+Curve Linear Negative Slope.
+
+Ordinary Least Squares (Sum of Squares of the errors )  m -->summation(x-x(mean))(y-y(mean))
+                                                                 ---------------
+								(x-x(mean))^2
+y = mx + c
+
+We first calculate m and we substitute mean values of x and y we get c.
+
+we plot a graph with the intercept,with our input values we try to find out the new y values.
+Predicted values..
+
+y   y(Predicted)
+3    2.8
+4    3.2
+2    3.6
+4    4.0
+5    4.4
+
+
+Coefficient of Determination --> summation(y(predicted) - y(mean))^2
+                                 -----------------------------------
+                                    summation(y - y(mean))^2
+
+0.5<R-2Score <1
+
+Normal equation (theta) --> (X(transpose).X)^inv . X(transpose).y
+
+y --->vector of the target values containing from y(1) to y(m)
+theta_best --> the value that minimizes the cost function
+
+Linear Regression model prediction..
+
+y = (theta)transpose .x
+
+(theta) is the model parameter vector containing the bias term and the feature weights.
+x - instance's feature vector with x(0) always equal to 1
+
+MSE Cost function for linear regression.
+
+MSE(X,h(theta)) = 1/m summation(theta(transpose).x(i) - y(i))^2
+ 
+
